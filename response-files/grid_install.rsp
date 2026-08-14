@@ -1,0 +1,41 @@
+###############################################
+# Oracle Grid Infrastructure 19c
+# Response File - AIX Single Instance
+# Author: Suleman
+###############################################
+
+oracle.install.responseFileVersion=/oracle/install/rspfmt_crsinstall_response_schema_v19.0.0
+
+# Installation Type
+# HA_CONFIG = Oracle Restart (single instance)
+# CRS_CONFIG = Oracle Clusterware (RAC)
+oracle.install.option=HA_CONFIG
+
+# Oracle Base for Grid
+ORACLE_BASE=/u01/app/grid
+
+# OS Groups
+oracle.install.asm.OSDBA=asmdba
+oracle.install.asm.OSOPER=asmoper
+oracle.install.asm.OSASM=asmadmin
+
+# Storage Option
+oracle.install.asm.storageOption=ASM
+
+# DATA Disk Group
+oracle.install.asm.diskGroup.name=DATA
+oracle.install.asm.diskGroup.redundancy=EXTERNAL
+oracle.install.asm.diskGroup.AUSize=4
+
+# ASM Disks (AIX raw devices)
+oracle.install.asm.diskGroup.disks=/dev/rhdisk2,/dev/rhdisk3
+
+# ASM Monitor Password
+oracle.install.asm.monitorPassword=AsmMonitor123!
+
+# Inventory
+INVENTORY_LOCATION=/u01/app/oraInventory
+SELECTED_LANGUAGES=en
+
+# Skip updates
+oracle.installer.autoupdates.option=SKIP_UPDATES
