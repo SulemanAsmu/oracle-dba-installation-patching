@@ -1,7 +1,7 @@
 #!/bin/bash
 # =============================================
 # OS:          IBM AIX 7.2 / 7.3
-# Author:      [Your Name]
+# Author:      Suleman
 # Description: AIX Pre-Installation Requirements
 #              Check for Oracle 19c
 #              Run as ROOT before installation
